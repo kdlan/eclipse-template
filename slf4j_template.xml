@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="logger.debug" enabled="true" name="debug">if(LOG.isDebugEnabled()){
+  LOG.debug(${cursor});
+}</template><template autoinsert="true" context="java" deleted="false" description="log.error" enabled="true" name="error">if(LOG.isErrorEnabled()){
+  LOG.error(${cursor});
+}</template><template autoinsert="true" context="java" deleted="false" description="logger.info" enabled="true" name="info">if(LOG.isInfoEnabled()){
+  LOG.info(${cursor});
+}</template><template autoinsert="true" context="java" deleted="false" description="Declare slf4j logger" enabled="true" name="log">${:import(org.slf4j.Logger,org.slf4j.LoggerFactory)}
+private static final Logger LOG = LoggerFactory.getLogger(${enclosing_type}.class);</template><template autoinsert="false" context="java" deleted="false" description="create new object" enabled="true" id="org.eclipse.jdt.ui.templates.new" name="new">${type} ${name} = new ${type}(${arguments});</template><template autoinsert="true" context="java" deleted="false" description="logger.trace" enabled="true" name="trace">if(LOG.isTraceEnabled()){
+  LOG.trace(${cursor});
+}</template><template autoinsert="true" context="java" deleted="false" description="logger.warn" enabled="true" name="warn">if(LOG.isWarnEnabled()){
+  LOG.warn(${cursor});
+}</template></templates>
